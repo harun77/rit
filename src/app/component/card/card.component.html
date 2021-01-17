@@ -1,0 +1,18 @@
+<mat-card *ngIf="leader" fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)">
+    <mat-card-header>
+        <div mat-card-avatar></div>
+    </mat-card-header>
+    <img mat-card-image height="100%" width="100%" src={{leader.image}} alt={{leader.name}}>
+    <mat-card-content>
+        <h3>{{leader.name}}</h3>
+        <h3>{{leader.designation}}</h3>
+    </mat-card-content>
+    <mat-card-actions>
+        <a mat-icon-button class="btn-facebook" href="http://www.facebook.com/profile.php?id=">
+            <i class="fa fa-facebook fa-lg"></i>
+        </a>
+        <a mat-icon-button class="btn-linkedin" href="http://www.linkedin.com/in/">
+            <i class="fa fa-linkedin fa-lg"></i>
+        </a>
+    </mat-card-actions>
+</mat-card>
