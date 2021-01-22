@@ -2,16 +2,16 @@
     <mat-card-header>
         <div mat-card-avatar></div>
     </mat-card-header>
-    <img mat-card-image height="100%" width="100%" src={{leader.image}} alt={{leader.name}}>
+    <img mat-card-image height="400px" width="100%" [src]="leader.image || defaultImage" [alt]="leader.name">
     <mat-card-content>
         <h3>{{leader.name}}</h3>
         <h3>{{leader.designation}}</h3>
     </mat-card-content>
     <mat-card-actions>
-        <a mat-icon-button class="btn-facebook" href="http://www.facebook.com/profile.php?id=">
+        <a mat-icon-button class="btn-facebook" target="_blank" [href]="leader.facebook">
             <i class="fa fa-facebook fa-lg"></i>
         </a>
-        <a mat-icon-button class="btn-linkedin" href="http://www.linkedin.com/in/">
+        <a mat-icon-button class="btn-linkedin" target="_blank" [href]="leader.linkedin">
             <i class="fa fa-linkedin fa-lg"></i>
         </a>
     </mat-card-actions>

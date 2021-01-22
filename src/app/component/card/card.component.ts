@@ -9,10 +9,11 @@ import { Leader } from 'src/app/shared/leader';
 export class CardComponent implements OnInit {
 
   @Input('leader') leader: Leader;
+
+  defaultImage: string = '/assets/images/empty.png';
    
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 }
