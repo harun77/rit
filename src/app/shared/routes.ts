@@ -4,7 +4,7 @@ import { BlogComponent } from "../component/blog/blog.component";
 import { CareerComponent } from "../component/career/career.component";
 import { ContactComponent } from "../component/contact/contact.component";
 import { HomeComponent } from "../component/home/home.component";
-import { ServicesComponent } from "../component/services/services.component";
+import { ServicesComponent } from "../component/our-services/services.component";
 
 export const ROUTES: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
