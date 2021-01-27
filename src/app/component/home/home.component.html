@@ -1,1 +1,7 @@
-<h1>Under Construction</h1>
+<ngx-slick-carousel class="carousel" [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let image of images" class="slide">
+        <img [src]="image" alt="Carousel image" height="500px" width="100%">
+    </div>
+</ngx-slick-carousel>
+
+<h1>content goes here</h1>

@@ -15,6 +15,8 @@ export class HomeComponent implements OnInit {
     '/assets/images/home/5.jpg',
   ];
 
+  slideConfig = { speed: 1000, "slidesToShow": 1, "slidesToScroll": 1, autoplay: true };
+
   constructor() { }
 
   ngOnInit(): void { }
