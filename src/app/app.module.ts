@@ -21,6 +21,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './component/about/about.component';
 import { BlogComponent } from './component/blog/blog.component';
+import { BoxComponent } from './component/box/box.component';
 import { CardComponent } from './component/card/card.component';
 import { CareerComponent } from './component/career/career.component';
 import { ContactComponent } from './component/contact/contact.component';
@@ -40,7 +41,8 @@ import { ServicesComponent } from './component/our-services/services.component';
     ServicesComponent,
     CareerComponent,
     BlogComponent,
-    CardComponent
+    CardComponent,
+    BoxComponent
   ],
   imports: [
     BrowserModule,

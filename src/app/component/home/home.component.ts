@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { LeaderService } from 'src/app/services/leader/leader.service';
+import { Service } from 'src/app/shared/service';
 
 @Component({
   selector: 'app-home',
@@ -17,8 +19,14 @@ export class HomeComponent implements OnInit {
 
   slideConfig = { speed: 1000, "slidesToShow": 1, "slidesToScroll": 1, autoplay: true };
 
-  constructor() { }
+  services: Service[];
 
-  ngOnInit(): void { }
+  constructor(private leaderService: LeaderService) { }
+
+  ngOnInit(): void {
+    this.leaderService.getServices().subscribe(res => {
+      this.services = res;
+    });
+  }
 
 }

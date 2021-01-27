@@ -4,4 +4,31 @@
     </div>
 </ngx-slick-carousel>
 
-<h1>content goes here</h1>
+<div class="container1">
+    <p class="label">Home</p>
+    <p class="about">
+        Founded in 2021, R IT Limited is a professional service provider designing and
+        developing customized Software Solutions and providing Independent Software Testing. In addition our
+        organization has developed multiple products for the domestic and overseas market.</p>
+
+    <p class="about">Our clientele’s spans a full spectrum of organization type (small, medium to large) from
+        Government,
+        International Donor Agencies, NGO’s, Private Sector, Multi-Nationals and International Partners. Our services is
+        geared both to the local and International (outsourcing) market, giving us the breadth and depth of experience
+        and knowledge by providing multifaceted and diverse solutions, based on client needs.</p>
+
+    <p class="about">Our focus and strength lies is our commitment to quality, reliability and excellence.</p>
+</div>
+
+<div class="container2" style="height: 500px;">
+    <p class="label services">Our Services</p>
+
+    <div *ngIf="services" fxLayout="row wrap" fxLayoutAlign="space-evenly center" fxFlex
+        style="display:flex; flex-direction: row;">
+        <app-box *ngFor="let service of services" [item]="service"></app-box>
+    </div>
+    <div [hidden]="services" fxFlex>
+        <mat-spinner></mat-spinner>
+        <h4>Loading...</h4>
+    </div>
+</div>
