@@ -16,7 +16,7 @@ export const LEADERS: Leader[] = [
         designation: 'MD'
     }, {
         id: '2',
-        name: 'Golam Mosihuddin Sikder',
+        name: 'Golam Mosihuddin Sikder (Mohsin)',
         image: '/assets/images/mohsin.jpg',
         designation: 'Chairman'
     }, {

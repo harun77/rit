@@ -1,1 +1,12 @@
-<h1>Under Construction</h1>
+<div class="container" style="height: 500px;">
+    <p class="label services">Our Services</p>
+
+    <div *ngIf="services" fxLayout="row wrap" fxLayoutAlign="space-evenly center" fxFlex
+        style="display:flex; flex-direction: row;">
+        <app-box *ngFor="let service of services" [item]="service"></app-box>
+    </div>
+    <div [hidden]="services" fxFlex>
+        <mat-spinner></mat-spinner>
+        <h4>Loading...</h4>
+    </div>
+</div>
