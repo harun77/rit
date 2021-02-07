@@ -1,15 +1,20 @@
-.full-width {
-    width: 95%;
-}
-
-.half-width {
-    width: 45%;
-}
-
-.form-size {
-    width: 75%;
-}
-
 address {
     font-size: 20px;
+}
+
+.container {
+    background-color: azure;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.location {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.element {
+    justify-content: flex-end;
 }
