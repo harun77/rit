@@ -6,6 +6,7 @@ $color: lightsteelblue;
 
 :host {
     color: $color;
+    font-family: sans-serif;
 }
 
 @mixin zero-margin($pad-up-down, $pad-left-right) {
@@ -50,6 +51,7 @@ $color: lightsteelblue;
 
 .menu-item {
     height: 30px !important;
+    font-size: 14px;
 }
 
 .menu-item a,
@@ -59,9 +61,13 @@ $color: lightsteelblue;
 
 .menu {
     padding-left: 30px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 mat-list {
     padding-top: 0 !important;
+}
+
+.copyright {
+    font-size: 10px;
 }

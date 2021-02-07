@@ -1,18 +1,18 @@
-<mat-card *ngIf="leader" fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)">
+<mat-card *ngIf="leader" style="display: initial;">
     <mat-card-header>
         <div mat-card-avatar></div>
     </mat-card-header>
-    <img mat-card-image height="400px" width="100%" [src]="leader.image || defaultImage" [alt]="leader.name">
-    <mat-card-content>
-        <h3>{{leader.name}}</h3>
-        <h3>{{leader.designation}}</h3>
+    <img mat-card-image height="250px" width="100%" [src]="leader.image || defaultImage" [alt]="leader.name">
+    <mat-card-content style="margin: 0;">
+        <p>{{leader.name}}</p>
+        <p>{{leader.designation}}</p>
     </mat-card-content>
-    <mat-card-actions>
+    <mat-card-actions style="padding: 0;">
         <a mat-icon-button class="btn-facebook" target="_blank" [href]="leader.facebook">
-            <i class="fa fa-facebook fa-lg"></i>
+            <i class="fa fa-facebook fa-sm"></i>
         </a>
         <a mat-icon-button class="btn-linkedin" target="_blank" [href]="leader.linkedin">
-            <i class="fa fa-linkedin fa-lg"></i>
+            <i class="fa fa-linkedin fa-sm"></i>
         </a>
     </mat-card-actions>
 </mat-card>

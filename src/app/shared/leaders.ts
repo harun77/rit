@@ -20,15 +20,5 @@ export const LEADERS: Leader[] = [
         name: 'Golam Mosihuddin Sikder (Mohsin)',
         image: '/assets/images/mohsin.jpg',
         designation: 'Chairman'
-    },
-    {
-        id: '4',
-        name: 'A.K.M. Harun Or Rashid',
-        designation: 'Director'
-    },
-    {
-        id: '5',
-        name: 'A.K.M. Harun Or Rashid',
-        designation: 'Director'
     }
 ];

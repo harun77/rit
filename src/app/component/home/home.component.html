@@ -1,6 +1,6 @@
 <ngx-slick-carousel class="carousel" [config]="slideConfig">
     <div ngxSlickItem *ngFor="let image of images" class="slide">
-        <img [src]="image" alt="Carousel image" height="500px" width="100%">
+        <img [src]="image" alt="Carousel image" height="300px" width="100%">
     </div>
 </ngx-slick-carousel>
 
@@ -11,14 +11,15 @@
         developing customized Software Solutions and providing Independent Software Testing.</p>
 
     <p class="about">Our client’s spans a full spectrum of organization type (small, medium to large) from
-        Government, International Donor Agencies, NGO’s, Private Sector, Multi-Nationals and International Partners. Our services is
+        Government, International Donor Agencies, NGO’s, Private Sector, Multi-Nationals and International Partners. Our
+        services is
         geared both to the local and International (outsourcing) market, giving us the breadth and depth of experience
         and knowledge by providing multifaceted and diverse solutions, based on client needs.</p>
 
     <p class="about">Our focus and strength lies is our commitment to quality, reliability and excellence.</p>
 </div>
 
-<div class="container2" style="height: 500px;">
+<div class="container2" style="height: 400px;">
     <p class="label services">Our Services</p>
 
     <div *ngIf="services" fxLayout="row wrap" fxLayoutAlign="space-evenly center" fxFlex

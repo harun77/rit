@@ -1,22 +1,22 @@
 .box {
     border-radius: 7px;
-    font-size: 22px;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: azure;
-    height: 250px;
-    width: 550px;
+    height: 180px;
+    width: 400px;
     box-shadow: 1px 1px 10px 1px #888888;
     transition: all 0.5s ease-in-out;
 }
 
 .box:hover {
-    font-size: 25px;
+    font-size: 20px;
     color: #3295c6;
-    height: 280px;
-    width: 600px;
+    height: 200px;
+    width: 450px;
     box-shadow: 1px 1px 10px 5px #888888;
     transition: all 0.5s ease-in-out;
 }

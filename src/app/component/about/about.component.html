@@ -7,8 +7,8 @@
         <div fxFlex>
             <div fxLayout="column" fxLayout.gt-sm="row">
                 <div>
-                    <h2 style="font-size: 30px;">Our History</h2>
-                    <p style="font-size: 24px;">Started in 2021, R IT Limited quickly established itself as a icon par
+                    <h2>Our History</h2>
+                    <p style="font-size: 14px;">Started in 2021, R IT Limited quickly established itself as a icon par
                         excellence. With its unique brand of world fusion that can be found nowhere else, it enjoys
                         patronage from the A-list clientele.</p>
                 </div>
@@ -17,17 +17,17 @@
         <div fxFlex>
             <div fxLayout="column" fxLayout.gt-sm="row">
                 <div>
-                    <h2 style="font-size: 30px;">Mission</h2>
-                    <p style="font-size: 24px;">Be the best in the eyes of our customers, employees and shareholders.</p>
+                    <h2>Mission</h2>
+                    <p style="font-size: 14px;">Be the best in the eyes of our customers, employees and shareholders.</p>
                 </div>
             </div>
         </div>
 
-        <div fxFlex style="display:flex; justify-content: center;">
-            <h1>Meet Us</h1>
+        <div fxFlex style="display:flex; justify-content: center; margin-bottom: 0;">
+            <h2 style="margin-bottom: 0;">Management Profiles</h2>
         </div>
 
-        <div *ngIf="leaders" fxLayout="row wrap" fxLayoutAlign="space-around center" fxLayoutGap="25px" fxFlex
+        <div *ngIf="leaders" fxLayout="row wrap" fxLayoutAlign="space-around center" fxLayoutGap="15px" fxFlex
             style="display:flex; flex-direction: row;">
             <app-card *ngFor="let leader of leaders" [leader]="leader"></app-card>
         </div>
