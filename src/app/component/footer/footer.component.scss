@@ -1,12 +1,9 @@
-$lt-gray: #ddd;
-$background-dark: #512da8;
-$background-light: #9575cd;
-$background-pale: #011e36;
-$color: lightsteelblue;
+$background-color: whitesmoke;
+$color: black;
 
 :host {
     color: $color;
-    font-family: sans-serif;
+    font-family: serif;
 }
 
 @mixin zero-margin($pad-up-down, $pad-left-right) {
@@ -15,7 +12,7 @@ $color: lightsteelblue;
 }
 
 .footer {
-    background-color: $background-pale;
+    background-color: $background-color;
     @include zero-margin(20px, 0px);
 }
 
@@ -49,9 +46,21 @@ $color: lightsteelblue;
     background-color: #512da8 !important;
 }
 
+.desc {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
 .menu-item {
     height: 30px !important;
     font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+    font-size: 15px;
 }
 
 .menu-item a,
@@ -61,7 +70,18 @@ $color: lightsteelblue;
 
 .menu {
     padding-left: 30px;
+    margin-top: 32px;
     font-size: 20px;
+}
+
+.address {
+    font-size: 14px;
+}
+
+.get-in-touch {
+    font-size: 20px;
+    margin-top: 32px;
+    margin-bottom: 27px;
 }
 
 mat-list {
@@ -69,5 +89,13 @@ mat-list {
 }
 
 .copyright {
-    font-size: 10px;
+    font-size: 14px;
+}
+
+.media {
+    text-align: center;
+}
+
+.media > a {
+    margin-right: 5px;
 }

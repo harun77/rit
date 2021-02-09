@@ -1,4 +1,4 @@
-.container1 {
+.about-container {
     margin: 0 5%;
     display: flex;
     flex-direction: column;
@@ -16,10 +16,11 @@
     font-size: 18px;
 }
 
-.container2 {
+.services-container {
     background-color: #f5f8fd;
     display: flex;
     flex-direction: column;
+    min-height: 400px;
 }
 
 .services {

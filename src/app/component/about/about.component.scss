@@ -1,9 +1,11 @@
+$background_color: #011e36;
+
 :host {
     font-family: sans-serif;
 }
 
 .container {
-    background-color: slategray;
+    background-color: $background_color;
     color: white;
     margin: 0;
     padding: 0;
