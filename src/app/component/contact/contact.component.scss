@@ -1,17 +1,59 @@
+$basic_color: #3295c6;
+
 :host {
     font-family: sans-serif;
 }
 
-address {
-    font-size: 20px;
+.address {
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.address > p {
+    margin-bottom: 5px !important;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.address-row {
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-family: cursive;
 }
 
 .container {
-    background-color: azure;
     height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+    margin: 2% 5%;
+    display: block;
+}
+
+.container > h1,
+.container > h2,
+.icon,
+.gq > h2,
+.location-icon {
+    color: $basic_color;
+}
+
+.icon {
+    margin-right: 15px;
+    font-size: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.icon:hover {
+    font-size: 18px;
+}
+
+.location-icon {
+    margin-right: 1%;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.location-icon:hover {
+    font-size: 23px;
 }
 
 .location {
@@ -19,6 +61,6 @@ address {
     margin: 50px 0;
 }
 
-.element {
-    justify-content: flex-end;
+.gq {
+    margin-top: 10vh;
 }
